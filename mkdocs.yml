@@ -10,3 +10,4 @@ extra_javascript:
   - https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js
 plugins:
   - tags
+  - search
