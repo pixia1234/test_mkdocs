@@ -11,3 +11,7 @@ extra_javascript:
 plugins:
   - tags
   - search
+    lang:
+      - en
+      - ja
+    separator: '[\s\-\.]+'
