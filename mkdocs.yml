@@ -1,9 +1,34 @@
 site_name: Test Docs
+repo_name: pixia1234/test_mkdocs
+repo_url: https://github.com/pixia1234/test_mkdocs
 theme:
   name: material
-markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
+  language: "zh"
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.view
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Light mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: dark mode
+
 
 extra_javascript:
   - javascript/mathjax.js
@@ -12,4 +37,19 @@ plugins:
   - tags
   - search:
       separator: '[\s\u200b\-]'
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - toc:
+      toc_depth: 3
+
 
