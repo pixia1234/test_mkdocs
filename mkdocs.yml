@@ -11,7 +11,4 @@ extra_javascript:
 plugins:
   - tags
   - search
-    lang:
-      - en
-      - ja
-    separator: '[\s\-\.]+'
+    separator: '[\s\u200b\-]'
